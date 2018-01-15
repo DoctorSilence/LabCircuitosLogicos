@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Aug 25 08:24:56 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Altera
+Top-level Entity Name : Altera
+Family : Cyclone IV E
+Device : EP4CE10F17C6
+Timing Models : Final
+Total logic elements : 7 / 10,320 ( < 1 % )
+    Total combinational functions : 7 / 10,320 ( < 1 % )
+    Dedicated logic registers : 0 / 10,320 ( 0 % )
+Total registers : 0
+Total pins : 11 / 180 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.436
+TNS   : -84.532
+
+Type  : Slow 1200mV 85C Model Setup 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -78.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.123
+TNS   : -67.992
+
+Type  : Slow 1200mV 0C Model Setup 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -78.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.925
+TNS   : -17.291
+
+Type  : Fast 1200mV 0C Model Setup 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -82.075
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Practica2:b2v_inst_pract2|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

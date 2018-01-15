@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "display[0]",
+					"strict" : false
+				},
+				{
+					"name" : "display[1]",
+					"strict" : false
+				},
+				{
+					"name" : "display[2]",
+					"strict" : false
+				},
+				{
+					"name" : "display[3]",
+					"strict" : false
+				},
+				{
+					"name" : "display[4]",
+					"strict" : false
+				},
+				{
+					"name" : "display[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ledClock",
+					"strict" : false
+				},
+				{
+					"name" : "ledReset",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ledPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "selectRF[0]",
+					"strict" : false
+				},
+				{
+					"name" : "selectRF[1]",
+					"strict" : false
+				},
+				{
+					"name" : "selectRF[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clkAll",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ExternalData[14]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

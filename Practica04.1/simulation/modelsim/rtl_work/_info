@@ -1,0 +1,217 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/simulation/modelsim
+Earithmetic_circuit
+Z1 w1507822667
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd
+Z7 F/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd
+l0
+L6
+V7G]N;dna@==1O@C>zc[Gb3
+!s100 <H<hIM6WVdMlN`D7O9V]?0
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1508509806
+!i10b 1
+Z10 !s108 1508509806.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd|
+Z12 !s107 /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Afunction_table
+R2
+R3
+R4
+R5
+DEx4 work 18 arithmetic_circuit 0 22 7G]N;dna@==1O@C>zc[Gb3
+l21
+L18
+VbV<;AcL>G7[ajG^NH0]oF3
+!s100 g4?ZY2`]WM1;U7Pk`[VfM1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Elogic_circuit
+Z15 w1508508073
+R2
+R3
+R4
+R5
+R0
+Z16 8/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd
+Z17 F/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd
+l0
+L6
+VE8;421CDVbRBBJ4z;NeJl2
+!s100 M6;7?M42`N7ZYHVKBLVTU3
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd|
+Z19 !s107 /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R2
+R3
+R4
+R5
+DEx4 work 13 logic_circuit 0 22 E8;421CDVbRBBJ4z;NeJl2
+l19
+L17
+V6CGiJFTFFHWnY35RJGJSY0
+!s100 <T0cH_9iWbVZWlgjb^G=G0
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Emultiplexer_2_to_1
+Z20 w1508507998
+R4
+R5
+R0
+Z21 8/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd
+Z22 F/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd
+l0
+L3
+VQl?D7I`f>ckWl^i19C9Nk0
+!s100 KabKjjeh_>6_z8zcNc_eV1
+R8
+31
+Z23 !s110 1508509807
+!i10b 1
+Z24 !s108 1508509807.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd|
+Z26 !s107 /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd|
+!i113 1
+R13
+R14
+Afunction_table
+R4
+R5
+DEx4 work 18 multiplexer_2_to_1 0 22 Ql?D7I`f>ckWl^i19C9Nk0
+l13
+L12
+VRWZoLLV1k`1Y[hX<=Y?M32
+!s100 =NB69enIGU@dG1LT:j]L[3
+R8
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Epract4
+Z27 w1508509760
+R4
+R5
+R0
+Z28 8/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd
+Z29 F/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd
+l0
+L5
+V?E>=9`NU_8DT[[[58@fdD1
+!s100 l8gg1;L`Heco0=[NXo4f22
+R8
+31
+R23
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd|
+Z31 !s107 /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R4
+R5
+DEx4 work 6 pract4 0 22 ?E>=9`NU_8DT[[[58@fdD1
+l64
+L17
+VIbcQhXg2;D5RcW?74a]]C2
+!s100 036QcGWVMZPM;_<@KX;TK1
+R8
+31
+R23
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R13
+R14
+Eshifter
+Z32 w1508507382
+R2
+R3
+R4
+R5
+R0
+Z33 8/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd
+Z34 F/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd
+l0
+L6
+VfE;g[5N79d83mB7eC8FP50
+!s100 P`F7oO<1eBXUW9M:id6?93
+R8
+31
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd|
+Z36 !s107 /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R2
+R3
+R4
+R5
+DEx4 work 7 shifter 0 22 fE;g[5N79d83mB7eC8FP50
+l18
+L16
+VT_L5IDOzl0mEE4ES25mB92
+!s100 mRU5MM6aBA:4bZW:;gIck0
+R8
+31
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14

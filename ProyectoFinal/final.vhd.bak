@@ -1,0 +1,118 @@
+library ieee ;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity final is
+  port (
+	clock, reset: in std_logic;
+	display: out std_logic_vector(6 downto 0);
+	D: out std_logic_vector(3 downto 0)
+  ) ;
+end entity ; -- final
+
+architecture bdf_type of final is
+
+	--PRACT 7
+
+	signal resPL: std_logic;
+	signal resJB: std_logic;
+	signal resBC: std_logic;
+	signal resN: std_logic;
+	signal resZ: std_logic;
+
+	signal resDA: std_logic_vector(2 downto 0);
+	signal resBA: std_logic_vector(2 downto 0);
+	signal resAA: std_logic_vector(2 downto 0);
+	signal resMB: std_logic;
+	signal resFS: std_logic_vector(3 downto 0);
+	signal resMD: std_logic;
+	signal resRW: std_logic;
+	signal resMW: std_logic;
+
+	signal resZF: std_logic_vector(15 downto 0);
+
+	signal resAdata: std_logic_vector(15 downto 0);
+
+	--PRACT 6
+
+	signal
+
+	component pract6
+		port(
+			RW, MB, MD, reset: std_logic;
+			BA, DA, AA: std_logic_vector(2 downto 0);
+			FS: std_logic_vector(3 downto 0);
+			clock: std_logic;
+			display: out std_logic_vector(6 downto 0);
+			D: out std_logic_vector(3 downto 0);
+			CIn: in std_logic_vector(15 downto 0);
+			ExternalData: in std_logic;
+			AddressPC: in std_logic_vector(15 downto 0);
+			focoRW: out std_logic;
+			resAdata: out std_logic_vector(15 downto 0)
+		);
+	end component;
+
+	component pract7
+		port(
+			clock: in std_logic;
+			reset: in std_logic;
+			iPL,iJB,iBC: in std_logic;
+			N,Z: in std_logic;
+			AData: in std_logic_vector (15 downto 0);
+			resZF: out std_logic_vector(15 downto 0);
+			--Palabra de CONTROL
+			DA,AA,BA: out std_logic_vector(2 downto 0);
+			FS: out std_logic_vector(3 downto 0);
+			MB,MD,RW,MW,PL,JB,BC: out std_logic
+		);
+	end component;
+
+begin
+
+	b2v_inst1 : pract6
+		PORT  MAP
+		(
+			RW=>resRW,
+			MB=>resMB,
+			MD=>resMD,
+			reset=>reset,
+			BA=>resBA,
+			DA=>resDA,
+			AA=>resAA,
+			FS=>resFS,
+			clock=>clock,
+			display=>display, --DISPLAY
+			D=>D, --DISPLAY
+			CIn=>resZF,
+			ExternalData=>resMW,
+			resAdata=>resAdata
+		);
+
+	b2v_inst2 : pract7
+		PORT  MAP
+		(
+			clock=>clock,
+			reset=>reset,
+			iPL=>resPL,
+			iJB=>resJB,
+			iBC=>resBC,
+			N=>resN,
+			Z=>resZ,
+			AData=>resAdata,
+			resZF=>resZF,
+			DA=>resDA,
+			AA=>resAA,
+			BA=>resBA,
+			FS=>resFS,
+			MB=>resMB,
+			MD=>resMD,
+			RW=>resRW,
+			MW=>resMW,
+			PL=>resPL,
+			JB=>resJB,
+			BC=>resBC
+		);
+
+
+end architecture ; -- bdf_type

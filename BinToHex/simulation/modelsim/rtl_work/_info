@@ -1,0 +1,295 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/local/ITAM/mmontesv/Examen/simulation/modelsim
+Econt2
+Z1 w1506658798
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8/home/local/ITAM/mmontesv/Examen/cont2.vhd
+Z7 F/home/local/ITAM/mmontesv/Examen/cont2.vhd
+l0
+L6
+Va:;n5UmKP_LBbegl66:l43
+!s100 CADWf5OC>Kz6Ld4m:391@3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1507903135
+!i10b 1
+Z10 !s108 1507903135.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/cont2.vhd|
+Z12 !s107 /home/local/ITAM/mmontesv/Examen/cont2.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 5 cont2 0 22 a:;n5UmKP_LBbegl66:l43
+l16
+L14
+V976RXKLZoU2ne@77>_[C=1
+!s100 YU3=`M;J8[7DPCeXjUen20
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edecoder_2_to_4
+Z15 w1506658800
+R2
+R3
+R4
+R5
+R0
+Z16 8/home/local/ITAM/mmontesv/Examen/decoder_2_4.vhd
+Z17 F/home/local/ITAM/mmontesv/Examen/decoder_2_4.vhd
+l0
+L6
+VX;JZH:D^ZfnPXeJNbPLQi0
+!s100 SR5WkU[?AT[@;_@:@1Ga[1
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/decoder_2_4.vhd|
+Z19 !s107 /home/local/ITAM/mmontesv/Examen/decoder_2_4.vhd|
+!i113 1
+R13
+R14
+Afunction_table
+R2
+R3
+R4
+R5
+DEx4 work 14 decoder_2_to_4 0 22 X;JZH:D^ZfnPXeJNbPLQi0
+l18
+L16
+VAk4lS@JTGWIehBMa5AZZB0
+!s100 `@;4`Gn;n[>e1]dgGh>`R3
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Ediv_freq
+Z20 w1506658802
+R4
+R5
+R0
+Z21 8/home/local/ITAM/mmontesv/Examen/div_freq.vhdl
+Z22 F/home/local/ITAM/mmontesv/Examen/div_freq.vhdl
+l0
+L5
+VQd7GH4o2G;VA?i?V?bZRQ3
+!s100 [5WXSEL0TUZm6M;>6;;lT3
+R8
+31
+Z23 !s110 1507903134
+!i10b 1
+Z24 !s108 1507903134.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/div_freq.vhdl|
+Z26 !s107 /home/local/ITAM/mmontesv/Examen/div_freq.vhdl|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 8 div_freq 0 22 Qd7GH4o2G;VA?i?V?bZRQ3
+l17
+L14
+VdEjMnBEV>gMZ58IdlKZNl2
+!s100 Ic^D1<U8gGKQ4gfk2bohE1
+R8
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Eg
+Z27 w1507902458
+R4
+R5
+R0
+Z28 8/home/local/ITAM/mmontesv/Examen/G.vhd
+Z29 F/home/local/ITAM/mmontesv/Examen/G.vhd
+l0
+L4
+Vhh0=4nMT`fU@8R5ORgI]O2
+!s100 J9R6Uz:`_YV?;_leH^<C73
+R8
+31
+R23
+!i10b 1
+R24
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/G.vhd|
+Z31 !s107 /home/local/ITAM/mmontesv/Examen/G.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R4
+R5
+DEx4 work 1 g 0 22 hh0=4nMT`fU@8R5ORgI]O2
+l12
+L11
+VFTlTSi_mcF1:ED2O?i2;b0
+!s100 240^?`8znDjfFK5lB0L>U2
+R8
+31
+R23
+!i10b 1
+R24
+R30
+R31
+!i113 1
+R13
+R14
+Em
+Z32 w1507902780
+R3
+R2
+R4
+R5
+R0
+Z33 8/home/local/ITAM/mmontesv/Examen/M.vhd
+Z34 F/home/local/ITAM/mmontesv/Examen/M.vhd
+l0
+L6
+V==X28ReDFa3^]8oG?U2Rn3
+!s100 S]B07c=>D48G1e6cDhSEW2
+R8
+31
+R23
+!i10b 1
+R24
+Z35 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/M.vhd|
+Z36 !s107 /home/local/ITAM/mmontesv/Examen/M.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R3
+R2
+R4
+R5
+DEx4 work 1 m 0 22 ==X28ReDFa3^]8oG?U2Rn3
+l16
+L14
+V39f03mX>nh69c_Wia`6;m2
+!s100 jDY]4h`ae3bRU=JlVNLdV2
+R8
+31
+R23
+!i10b 1
+R24
+R35
+R36
+!i113 1
+R13
+R14
+Emultiplexer_4_to_1
+Z37 w1506658804
+R4
+R5
+R0
+Z38 8/home/local/ITAM/mmontesv/Examen/mux_4_1.vhd
+Z39 F/home/local/ITAM/mmontesv/Examen/mux_4_1.vhd
+l0
+L3
+V9n68<;Km2l;`TYFJ^AbEe0
+!s100 IbOMWka^BeOmUNM5YY[Rm1
+R8
+31
+R23
+!i10b 1
+R24
+Z40 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/mux_4_1.vhd|
+Z41 !s107 /home/local/ITAM/mmontesv/Examen/mux_4_1.vhd|
+!i113 1
+R13
+R14
+Afunction_table
+R4
+R5
+DEx4 work 18 multiplexer_4_to_1 0 22 9n68<;Km2l;`TYFJ^AbEe0
+l15
+L14
+VQ1>2nc:Ph8k<6P2T^UM4I0
+!s100 RZLFJ@0UF>Yj[_cQLHU=j1
+R8
+31
+R23
+!i10b 1
+R24
+R40
+R41
+!i113 1
+R13
+R14
+Epracticaexamen
+Z42 w1507902824
+R4
+R5
+R0
+Z43 8/home/local/ITAM/mmontesv/Examen/practicaExamen.vhd
+Z44 F/home/local/ITAM/mmontesv/Examen/practicaExamen.vhd
+l0
+L4
+VGQlo7I^[>W8Fm;P=R><km1
+!s100 0@@lO=g88;b2Gej7NYbS>1
+R8
+31
+R23
+!i10b 1
+R24
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/local/ITAM/mmontesv/Examen/practicaExamen.vhd|
+Z46 !s107 /home/local/ITAM/mmontesv/Examen/practicaExamen.vhd|
+!i113 1
+R13
+R14
+Abdf_type
+R4
+R5
+DEx4 work 14 practicaexamen 0 22 GQlo7I^[>W8Fm;P=R><km1
+l76
+L15
+VR[`WOVGTnQO6Ggm9oITjC0
+!s100 HPYJ6?0fj]AMH9PdOZm3c3
+R8
+31
+R23
+!i10b 1
+R24
+R45
+R46
+!i113 1
+R13
+R14

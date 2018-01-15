@@ -1,0 +1,48 @@
+# do Altera_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /opt/altera/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica01/Altera.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:21:34 on Aug 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica01/Altera.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Altera
+# -- Compiling architecture bdf_type of Altera
+# End time: 09:21:34 on Aug 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.altera
+# vsim work.altera 
+# Start time: 09:21:37 on Aug 25,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.altera(bdf_type)
+wave create -driver freeze -pattern repeater -initialvalue U -period 50ps -sequence { 0 1  } -repeat forever -starttime 0ps -endtime 1000ps sim:/altera/A
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+wave create -driver freeze -pattern repeater -initialvalue U -period 100ps -sequence { 0 1  } -repeat forever -starttime 0ps -endtime 1000ps sim:/altera/B
+wave create -driver freeze -pattern repeater -initialvalue U -period 200ps -sequence { 0 1  } -repeat forever -starttime 0ps -endtime 1000ps sim:/altera/C
+wave create -driver freeze -pattern repeater -initialvalue U -period 400ps -sequence { 0 1  } -repeat forever -starttime 0ps -endtime 1000ps sim:/altera/D
+add wave -position end  sim:/altera/ao
+add wave -position end  sim:/altera/bo
+add wave -position end  sim:/altera/co
+add wave -position end  sim:/altera/do
+add wave -position end  sim:/altera/eo
+add wave -position end  sim:/altera/fo
+add wave -position end  sim:/altera/go
+run -all
+# End time: 09:34:00 on Aug 25,2017, Elapsed time: 0:12:23
+# Errors: 0, Warnings: 0
+wave editwrite -file /home/local/ITAM/mmontesv/CircuitosLogicos/Practica01/simulation/modelsim/rtl_work/wave.do

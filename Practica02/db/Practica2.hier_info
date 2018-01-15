@@ -1,0 +1,173 @@
+|Practica2
+S1 <= decoder_2_to_4:inst6.D0
+clock => div_freq:inst8.clk
+S2 <= decoder_2_to_4:inst6.D1
+S3 <= decoder_2_to_4:inst6.D2
+S4 <= decoder_2_to_4:inst6.D3
+sal[0] <= salida[0].DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= salida[1].DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= salida[2].DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= salida[3].DB_MAX_OUTPUT_PORT_TYPE
+sal[4] <= salida[4].DB_MAX_OUTPUT_PORT_TYPE
+sal[5] <= salida[5].DB_MAX_OUTPUT_PORT_TYPE
+sal[6] <= salida[6].DB_MAX_OUTPUT_PORT_TYPE
+dip_0[3] => multiplexer_4_to_1:inst.I0[3]
+dip_0[2] => multiplexer_4_to_1:inst.I0[2]
+dip_0[1] => multiplexer_4_to_1:inst.I0[1]
+dip_0[0] => multiplexer_4_to_1:inst.I0[0]
+dip_1[3] => multiplexer_4_to_1:inst.I1[3]
+dip_1[2] => multiplexer_4_to_1:inst.I1[2]
+dip_1[1] => multiplexer_4_to_1:inst.I1[1]
+dip_1[0] => multiplexer_4_to_1:inst.I1[0]
+dip_2[3] => multiplexer_4_to_1:inst.I2[3]
+dip_2[2] => multiplexer_4_to_1:inst.I2[2]
+dip_2[1] => multiplexer_4_to_1:inst.I2[1]
+dip_2[0] => multiplexer_4_to_1:inst.I2[0]
+dip_3[3] => multiplexer_4_to_1:inst.I3[3]
+dip_3[2] => multiplexer_4_to_1:inst.I3[2]
+dip_3[1] => multiplexer_4_to_1:inst.I3[1]
+dip_3[0] => multiplexer_4_to_1:inst.I3[0]
+
+
+|Practica2|decoder_2_to_4:inst6
+S[1] => Mux0.IN5
+S[1] => Mux1.IN5
+S[1] => Mux2.IN5
+S[1] => Mux3.IN5
+S[0] => Mux0.IN4
+S[0] => Mux1.IN4
+S[0] => Mux2.IN4
+S[0] => Mux3.IN4
+D0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|cont2:inst4
+Clock => temp[1].CLK
+Clock => temp[0].CLK
+Reset => temp[1].ACLR
+Reset => temp[0].ACLR
+D[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+D[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|div_freq:inst8
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => temporal.CLK
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => counter[13].ACLR
+reset => counter[14].ACLR
+reset => counter[15].ACLR
+reset => counter[16].ACLR
+reset => temporal.ACLR
+clk_out <= temporal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|Altera:inst7
+A => SYNTHESIZED_WIRE_82.IN0
+A => SYNTHESIZED_WIRE_80.IN0
+A => SYNTHESIZED_WIRE_9.IN0
+A => SYNTHESIZED_WIRE_12.IN0
+A => SYNTHESIZED_WIRE_23.IN0
+A => SYNTHESIZED_WIRE_20.IN0
+B => SYNTHESIZED_WIRE_20.IN1
+B => SYNTHESIZED_WIRE_9.IN1
+B => SYNTHESIZED_WIRE_81.IN0
+B => SYNTHESIZED_WIRE_82.IN1
+C => SYNTHESIZED_WIRE_80.IN1
+C => SYNTHESIZED_WIRE_36.IN1
+C => SYNTHESIZED_WIRE_79.IN1
+C => SYNTHESIZED_WIRE_12.IN1
+C => SYNTHESIZED_WIRE_11.IN1
+C => SYNTHESIZED_WIRE_22.IN1
+C => SYNTHESIZED_WIRE_40.IN1
+C => SYNTHESIZED_WIRE_62.IN1
+C => SYNTHESIZED_WIRE_81.IN1
+C => SYNTHESIZED_WIRE_64.IN1
+C => SYNTHESIZED_WIRE_77.IN1
+C => SYNTHESIZED_WIRE_82.IN1
+C => SYNTHESIZED_WIRE_78.IN1
+D => SYNTHESIZED_WIRE_10.IN1
+D => SYNTHESIZED_WIRE_23.IN1
+D => SYNTHESIZED_WIRE_83.IN1
+D => SYNTHESIZED_WIRE_39.IN1
+D => SYNTHESIZED_WIRE_12.IN1
+D => SYNTHESIZED_WIRE_21.IN1
+D => SYNTHESIZED_WIRE_38.IN1
+D => SYNTHESIZED_WIRE_37.IN1
+D => SYNTHESIZED_WIRE_52.IN1
+D => SYNTHESIZED_WIRE_81.IN1
+D => SYNTHESIZED_WIRE_51.IN1
+D => SYNTHESIZED_WIRE_65.IN1
+D => SYNTHESIZED_WIRE_63.IN1
+D => SYNTHESIZED_WIRE_76.IN1
+ao <= ao.DB_MAX_OUTPUT_PORT_TYPE
+bo <= bo.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+do <= do.DB_MAX_OUTPUT_PORT_TYPE
+eo <= eo.DB_MAX_OUTPUT_PORT_TYPE
+fo <= fo.DB_MAX_OUTPUT_PORT_TYPE
+go <= go.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Practica2|multiplexer_4_to_1:inst
+S[1] => Mux0.IN1
+S[1] => Mux1.IN1
+S[1] => Mux2.IN1
+S[1] => Mux3.IN1
+S[0] => Mux0.IN0
+S[0] => Mux1.IN0
+S[0] => Mux2.IN0
+S[0] => Mux3.IN0
+I0[3] => Mux3.IN2
+I0[2] => Mux2.IN2
+I0[1] => Mux1.IN2
+I0[0] => Mux0.IN2
+I1[3] => Mux3.IN3
+I1[2] => Mux2.IN3
+I1[1] => Mux1.IN3
+I1[0] => Mux0.IN3
+I2[3] => Mux3.IN4
+I2[2] => Mux2.IN4
+I2[1] => Mux1.IN4
+I2[0] => Mux0.IN4
+I3[3] => Mux3.IN5
+I3[2] => Mux2.IN5
+I3[1] => Mux1.IN5
+I3[0] => Mux0.IN5
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

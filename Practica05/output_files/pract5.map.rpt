@@ -1,0 +1,695 @@
+Analysis & Synthesis report for pract5
+Wed Oct 25 21:54:40 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: pract2:b2v_inst_practica2|div_freq:b2v_inst8
+ 12. Parameter Settings for User Entity Instance: binary_to_bcd:stbin
+ 13. Port Connectivity Checks: "binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0"
+ 14. Port Connectivity Checks: "binary_to_bcd:stbin"
+ 15. Port Connectivity Checks: "pract2:b2v_inst_practica2|div_freq:b2v_inst8"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Oct 25 21:54:40 2017       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; pract5                                      ;
+; Top-level Entity Name              ; pract5                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 7,210                                       ;
+;     Total combinational functions  ; 3,113                                       ;
+;     Dedicated logic registers      ; 4,189                                       ;
+; Total registers                    ; 4189                                        ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                                      ; pract5             ; pract5             ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; binary_to_bcd_digit.vhd          ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd_digit.vhd ;         ;
+; div_freq.vhdl                    ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/div_freq.vhdl           ;         ;
+; binary_to_bcd.vhd                ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd.vhd       ;         ;
+; dataMemory.vhd                   ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/dataMemory.vhd          ;         ;
+; Practica2.vhd                    ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd           ;         ;
+; mux_4_1.vhd                      ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/mux_4_1.vhd             ;         ;
+; Altera.vhd                       ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Altera.vhd              ;         ;
+; cont2.vhd                        ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/cont2.vhd               ;         ;
+; decoder_2_4.vhd                  ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/decoder_2_4.vhd         ;         ;
+; Practica5.vhd                    ; yes             ; User VHDL File  ; /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd           ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 7,210       ;
+;                                             ;             ;
+; Total combinational functions               ; 3113        ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 3036        ;
+;     -- 3 input functions                    ; 28          ;
+;     -- <=2 input functions                  ; 49          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 3093        ;
+;     -- arithmetic mode                      ; 20          ;
+;                                             ;             ;
+; Total registers                             ; 4189        ;
+;     -- Dedicated logic registers            ; 4189        ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 30          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 4189        ;
+; Total fan-out                               ; 24911       ;
+; Average fan-out                             ; 3.38        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name         ; Library Name ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+---------------------+--------------+
+; |pract5                                           ; 3113 (0)            ; 4189 (0)                  ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |pract5                                                               ; pract5              ; work         ;
+;    |binary_to_bcd:stbin|                          ; 46 (27)             ; 57 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|binary_to_bcd:stbin                                           ; binary_to_bcd       ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:1:digit_0| ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:1:digit_0 ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:2:digit_0| ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:2:digit_0 ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:3:digit_0| ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:3:digit_0 ; binary_to_bcd_digit ; work         ;
+;       |binary_to_bcd_digit:\bcd_digits:4:digit_0| ; 4 (4)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0 ; binary_to_bcd_digit ; work         ;
+;    |data_memory:b2v_inst_memory|                  ; 3016 (3016)         ; 4112 (4112)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|data_memory:b2v_inst_memory                                   ; data_memory         ; work         ;
+;    |pract2:b2v_inst_practica2|                    ; 51 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2                                     ; pract2              ; work         ;
+;       |Altera:b2v_inst7|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2|Altera:b2v_inst7                    ; Altera              ; work         ;
+;       |cont2:b2v_inst4|                           ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2|cont2:b2v_inst4                     ; cont2               ; work         ;
+;       |decoder_2_to_4:b2v_inst6|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2|decoder_2_to_4:b2v_inst6            ; decoder_2_to_4      ; work         ;
+;       |div_freq:b2v_inst8|                        ; 30 (30)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2|div_freq:b2v_inst8                  ; div_freq            ; work         ;
+;       |multiplexer_4_to_1:b2v_inst|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pract5|pract2:b2v_inst_practica2|multiplexer_4_to_1:b2v_inst         ; multiplexer_4_to_1  ; work         ;
++---------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                          ;
++------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Register name                                                          ; Reason for Removal                                                                 ;
++------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:1:digit_0|prev_ena ; Merged with binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:2:digit_0|prev_ena ; Merged with binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:3:digit_0|prev_ena ; Merged with binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0|prev_ena ;
+; Total Number of Removed Registers = 3                                  ;                                                                                    ;
++------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 4189  ;
+; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Load   ; 2     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 4148  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:1:digit_0|bcd[3] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:2:digit_0|bcd[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:3:digit_0|bcd[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |pract5|binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0|bcd[3] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[255][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[254][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[253][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[252][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[251][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[250][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[249][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[248][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[247][11]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[246][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[245][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[244][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[243][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[242][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[241][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[240][11]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[239][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[238][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[237][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[236][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[235][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[234][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[233][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[232][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[231][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[230][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[229][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[228][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[227][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[226][2]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[225][2]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[224][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[223][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[222][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[221][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[220][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[219][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[218][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[217][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[216][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[215][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[214][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[213][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[212][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[211][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[210][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[209][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[208][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[207][2]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[206][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[205][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[204][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[203][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[202][11]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[201][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[200][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[199][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[198][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[197][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[196][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[195][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[194][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[193][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[192][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[191][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[190][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[189][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[188][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[187][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[186][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[185][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[184][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[183][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[182][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[181][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[180][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[179][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[178][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[177][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[176][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[175][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[174][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[173][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[172][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[171][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[170][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[169][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[168][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[167][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[166][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[165][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[164][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[163][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[162][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[161][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[160][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[159][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[158][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[157][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[156][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[155][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[154][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[153][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[152][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[151][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[150][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[149][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[148][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[147][7]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[146][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[145][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[144][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[143][11]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[142][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[141][11]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[140][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[139][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[138][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[137][2]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[136][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[135][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[134][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[133][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[132][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[131][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[130][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[129][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[128][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[127][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[126][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[125][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[124][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[123][10]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[122][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[121][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[120][3]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[119][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[118][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[117][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[116][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[115][13]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[114][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[113][4]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[112][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[111][5]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[110][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[109][9]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[108][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[107][12]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[106][14]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[105][6]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[104][8]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[103][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[102][1]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[101][15]                             ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[100][0]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[99][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[98][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[97][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[96][7]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[95][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[94][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[93][7]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[92][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[91][10]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[90][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[89][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[88][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[87][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[86][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[85][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[84][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[83][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[82][8]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[81][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[80][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[79][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[78][15]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[77][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[76][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[75][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[74][2]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[73][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[72][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[71][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[70][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[69][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[68][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[67][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[66][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[65][3]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[64][7]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[63][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[62][1]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[61][1]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[60][2]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[59][15]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[58][3]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[57][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[56][14]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[55][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[54][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[53][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[52][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[51][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[50][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[49][3]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[48][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[47][10]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[46][14]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[45][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[44][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[43][2]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[42][8]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[41][1]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[40][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[39][7]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[38][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[37][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[36][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[35][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[34][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[33][1]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[32][14]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[31][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[30][11]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[29][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[28][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[27][14]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[26][13]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[25][14]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[24][10]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[23][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[22][0]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[21][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[20][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[19][2]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[18][5]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[17][15]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[16][6]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[15][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[14][4]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[13][9]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[12][15]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[11][8]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[10][12]                              ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[9][14]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[8][0]                                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[7][1]                                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[6][13]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[5][12]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[4][12]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[3][8]                                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[2][5]                                ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[1][15]                               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pract5|data_memory:b2v_inst_memory|mem[0][2]                                ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |pract5|binary_to_bcd:stbin|bit_count[4]                                     ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |pract5|binary_to_bcd:stbin|binary_reg[1]                                    ;
+; 256:1              ; 16 bits   ; 2720 LEs      ; 2720 LEs             ; 0 LEs                  ; Yes        ; |pract5|data_memory:b2v_inst_memory|Data_out[2]                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pract5|pract2:b2v_inst_practica2|multiplexer_4_to_1:b2v_inst|Mux3           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pract2:b2v_inst_practica2|div_freq:b2v_inst8 ;
++----------------+--------+-----------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                            ;
++----------------+--------+-----------------------------------------------------------------+
+; div            ; 100000 ; Signed Integer                                                  ;
++----------------+--------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binary_to_bcd:stbin ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; bits           ; 16    ; Signed Integer                          ;
+; digits         ; 4     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:4:digit_0"                       ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "binary_to_bcd:stbin"                                                                                        ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                  ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; reset_n ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; ena     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; busy    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "pract2:b2v_inst_practica2|div_freq:b2v_inst8" ;
++-------+-------+----------+-----------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                       ;
++-------+-------+----------+-----------------------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                                  ;
++-------+-------+----------+-----------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 30                          ;
+; cycloneiii_ff         ; 4189                        ;
+;     CLR               ; 2                           ;
+;     ENA               ; 4131                        ;
+;     ENA SCLR          ; 17                          ;
+;     SLD               ; 2                           ;
+;     plain             ; 37                          ;
+; cycloneiii_lcell_comb ; 3114                        ;
+;     arith             ; 20                          ;
+;         2 data inputs ; 20                          ;
+;     normal            ; 3094                        ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 3036                        ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 5.96                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:17     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Oct 25 21:54:05 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pract5 -c pract5
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file binary_to_bcd_digit.vhd
+    Info (12022): Found design unit 1: binary_to_bcd_digit-logic File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd_digit.vhd Line: 36
+    Info (12023): Found entity 1: binary_to_bcd_digit File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd_digit.vhd Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file Practica2.bdf
+    Info (12023): Found entity 1: Practica2
+Info (12021): Found 2 design units, including 1 entities, in source file div_freq.vhdl
+    Info (12022): Found design unit 1: div_freq-Behavioral File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/div_freq.vhdl Line: 14
+    Info (12023): Found entity 1: div_freq File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/div_freq.vhdl Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file binary_to_bcd.vhd
+    Info (12022): Found design unit 1: binary_to_bcd-logic File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd.vhd Line: 40
+    Info (12023): Found entity 1: binary_to_bcd File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file dataMemory.vhd
+    Info (12022): Found design unit 1: data_memory-ram_arc File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/dataMemory.vhd Line: 15
+    Info (12023): Found entity 1: data_memory File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/dataMemory.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Practica2.vhd
+    Info (12022): Found design unit 1: pract2-bdf_type File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 41
+    Info (12023): Found entity 1: pract2 File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file mux_4_1.vhd
+    Info (12022): Found design unit 1: multiplexer_4_to_1-function_table File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/mux_4_1.vhd Line: 14
+    Info (12023): Found entity 1: multiplexer_4_to_1 File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/mux_4_1.vhd Line: 3
+Info (12021): Found 2 design units, including 1 entities, in source file Altera.vhd
+    Info (12022): Found design unit 1: Altera-bdf_type File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Altera.vhd Line: 42
+    Info (12023): Found entity 1: Altera File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Altera.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file cont2.vhd
+    Info (12022): Found design unit 1: cont2-Behavioral File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/cont2.vhd Line: 14
+    Info (12023): Found entity 1: cont2 File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/cont2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file decoder_2_4.vhd
+    Info (12022): Found design unit 1: decoder_2_to_4-function_table File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/decoder_2_4.vhd Line: 16
+    Info (12023): Found entity 1: decoder_2_to_4 File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/decoder_2_4.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file Practica5.vhd
+    Info (12022): Found design unit 1: pract5-bdf_type File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd Line: 23
+    Info (12023): Found entity 1: pract5 File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd Line: 5
+Info (12127): Elaborating entity "pract5" for the top level hierarchy
+Info (12128): Elaborating entity "pract2" for hierarchy "pract2:b2v_inst_practica2" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd Line: 84
+Info (12128): Elaborating entity "multiplexer_4_to_1" for hierarchy "pract2:b2v_inst_practica2|multiplexer_4_to_1:b2v_inst" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 105
+Info (12128): Elaborating entity "cont2" for hierarchy "pract2:b2v_inst_practica2|cont2:b2v_inst4" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 114
+Info (12128): Elaborating entity "decoder_2_to_4" for hierarchy "pract2:b2v_inst_practica2|decoder_2_to_4:b2v_inst6" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 121
+Info (12128): Elaborating entity "Altera" for hierarchy "pract2:b2v_inst_practica2|Altera:b2v_inst7" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 129
+Info (12128): Elaborating entity "div_freq" for hierarchy "pract2:b2v_inst_practica2|div_freq:b2v_inst8" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica2.vhd Line: 142
+Info (12128): Elaborating entity "binary_to_bcd" for hierarchy "binary_to_bcd:stbin" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd Line: 99
+Info (12128): Elaborating entity "binary_to_bcd_digit" for hierarchy "binary_to_bcd:stbin|binary_to_bcd_digit:\bcd_digits:1:digit_0" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/binary_to_bcd.vhd Line: 104
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:b2v_inst_memory" File: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica05/Practica5.vhd Line: 109
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 7256 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 7226 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 1003 megabytes
+    Info: Processing ended: Wed Oct 25 21:54:40 2017
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:01:00
+
+

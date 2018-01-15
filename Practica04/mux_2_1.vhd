@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity multiplexer_2_to_1 is
+	port (
+		S : in std_logic;
+		A : in std_logic_vector(15 downto 0);
+		B : in std_logic_vector(15 downto 0);
+		O 	: out std_logic_vector(15 downto 0)
+		);
+end multiplexer_2_to_1;
+
+architecture function_table of multiplexer_2_to_1 is
+	begin
+		with S select
+			O <= A  				when '0',
+			B 						when '1',
+			"XXXXXXXXXXXXXXXX"  	when others;
+	end function_table;

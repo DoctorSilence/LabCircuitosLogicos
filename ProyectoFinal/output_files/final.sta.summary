@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clkAll'
+Slack : -15.683
+TNS   : -44334.300
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -2.696
+TNS   : -24.169
+
+Type  : Slow 1200mV 85C Model Setup 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clkAll'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkAll'
+Slack : -3.000
+TNS   : -4259.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 0C Model Setup 'clkAll'
+Slack : -14.051
+TNS   : -39620.514
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -2.361
+TNS   : -19.604
+
+Type  : Slow 1200mV 0C Model Setup 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkAll'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkAll'
+Slack : -3.000
+TNS   : -4259.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -21.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Setup 'clkAll'
+Slack : -8.587
+TNS   : -24031.197
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -1.094
+TNS   : -6.007
+
+Type  : Fast 1200mV 0C Model Setup 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkAll'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkAll'
+Slack : -3.000
+TNS   : -4700.236
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -21.972
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pract6:b2v_inst1|Practica2:b2v_inst5|div_freq:b2v_inst8|temporal'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

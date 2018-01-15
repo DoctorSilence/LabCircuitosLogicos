@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 25 09:01:47 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : pract4
+Top-level Entity Name : pract4
+Family : Cyclone IV E
+Total logic elements : 281
+    Total combinational functions : 264
+    Dedicated logic registers : 77
+Total registers : 77
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

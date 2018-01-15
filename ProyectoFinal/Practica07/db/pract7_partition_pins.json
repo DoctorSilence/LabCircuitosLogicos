@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "resZF[0]",
+					"strict" : false
+				},
+				{
+					"name" : "resZF[1]",
+					"strict" : false
+				},
+				{
+					"name" : "resZF[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MB",
+					"strict" : false
+				},
+				{
+					"name" : "MD",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
+					"strict" : false
+				},
+				{
+					"name" : "MW",
+					"strict" : false
+				},
+				{
+					"name" : "PL",
+					"strict" : false
+				},
+				{
+					"name" : "JB",
+					"strict" : false
+				},
+				{
+					"name" : "BC",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "iPL",
+					"strict" : false
+				},
+				{
+					"name" : "iJB",
+					"strict" : false
+				},
+				{
+					"name" : "iBC",
+					"strict" : false
+				},
+				{
+					"name" : "AData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AData[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

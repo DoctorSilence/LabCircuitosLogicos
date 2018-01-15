@@ -1,0 +1,131 @@
+LIBRARY  ieee;
+USE  ieee.std_logic_1164.all;
+LIBRARY  work;
+
+entity pract6 is
+	port(
+		RW, MB, MD, reset: std_logic;
+		BA, DA, AA: std_logic_vector(2 downto 0);
+		FS: std_logic_vector(3 downto 0);
+		CIn: in std_logic_vector (15 downto 0);
+		DIn: out std_logic_vector (15 downto 0);
+		clock: std_logic;
+		display: out std_logic_vector(6 downto 0);
+		D: out std_logic_vector(3 downto 0)
+	);
+end entity;
+
+architecture bdf_type of pract6 is
+
+	signal resMuxD: std_logic_vector(15 downto 0);
+	signal resMuxB: std_logic_vector(15 downto 0);
+	signal resB: std_logic_vector(15 downto 0);
+	signal resA: std_logic_vector(15 downto 0);
+	signal resF: std_logic_vector(15 downto 0);
+
+	component register_file
+		port(
+			CLK , RESET , RW : in std_logic ;
+			Ddata : in std_logic_vector (15 downto 0);
+			Aadd, Badd, Dadd : in std_logic_vector (2 downto 0);
+			Adata, Bdata : out std_logic_vector (15 downto 0)
+		);
+	end component;
+
+	component multiplexer_2_to_1
+		port(
+			S : in std_logic;
+			A : in std_logic_vector(15 downto 0);
+			B : in std_logic_vector(15 downto 0);
+			O 	: out std_logic_vector(15 downto 0)
+		);
+	end component;
+
+	component unidadFuncional
+		port(
+			FS: in std_logic_vector(3 downto 0);
+			AIn: in std_logic_vector(15 downto 0);
+			BIn: in std_logic_vector(15 downto 0);
+			C: out std_logic;
+			N: out std_logic;
+			F: out std_logic_vector(15 downto 0);
+			Z: out std_logic
+		);
+	end component;
+
+	component Practica2
+		port(
+			clock :  IN  STD_LOGIC;
+			In0 :  IN  STD_LOGIC_VECTOR(0 TO 3);
+			In1 :  IN  STD_LOGIC_VECTOR(0 TO 3);
+			In2 :  IN  STD_LOGIC_VECTOR(0 TO 3);
+			In3 :  IN  STD_LOGIC_VECTOR(0 TO 3);
+			S1 :  OUT  STD_LOGIC;
+			S2 :  OUT  STD_LOGIC;
+			S3 :  OUT  STD_LOGIC;
+			S4 :  OUT  STD_LOGIC;
+			sal :  OUT  STD_LOGIC_VECTOR(6 DOWNTO 0)
+		);
+	end component;
+
+begin
+	CIn <= X"0ABCD";
+	DIn <= X"01123";
+
+	b2v_inst1 : register_file
+		PORT  MAP
+		(
+			CLK => clock,
+			RESET => reset,
+			RW=> RW,
+			Ddata=> resMuxD,
+			Aadd=> AA,
+			Badd=> BA,
+			Dadd=> DA,
+			Adata=> resA,
+			Bdata=> resB
+		);
+
+	b2v_inst2 : multiplexer_2_to_1
+		PORT  MAP
+		(
+			S => MB,
+			A => CIn,
+			B => resB,
+			O => resMuxB
+		);
+
+	b2v_inst3 : multiplexer_2_to_1
+		PORT  MAP
+		(
+			S => MD,
+			A => resF,
+			B => DIn,
+			O => resMuxD
+		);
+
+	b2v_inst4 : unidadFuncional
+		PORT  MAP
+		(
+			FS=>FS,
+			AIn=>resA,
+			BIn=>resMuxB,
+			F=>resF
+		);
+
+	b2v_inst4 : Practica2
+		PORT  MAP
+		(
+			clock =>clock,
+			In0 =>resB(12 downto 15),
+			In1 =>resB(8 downto 11),
+			In2 =>resB(4 downto 7),
+			In3 =>resB(3 downto 0),
+			S1 =>D(0),
+			S2 =>D(1),
+			S3 =>D(2),
+			S4 =>D(3),
+			sal => display
+		);
+
+end architecture ; -- bdf_type

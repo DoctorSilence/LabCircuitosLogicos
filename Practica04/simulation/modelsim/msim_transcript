@@ -1,0 +1,180 @@
+# do pract4_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /opt/altera/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/div_freq.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/div_freq.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity div_freq
+# -- Compiling architecture Behavioral of div_freq
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_4_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_4_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer_4_to_1
+# -- Compiling architecture function_table of multiplexer_4_to_1
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/cont2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/cont2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity cont2
+# -- Compiling architecture Behavioral of cont2
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/decoder_2_4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/decoder_2_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity decoder_2_to_4
+# -- Compiling architecture function_table of decoder_2_to_4
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/Practica2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/Practica2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Practica2
+# -- Compiling architecture bdf_type of Practica2
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/binary_to_bcd_digit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/binary_to_bcd_digit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity binary_to_bcd_digit
+# -- Compiling architecture logic of binary_to_bcd_digit
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UF.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity unidadFuncional
+# -- Compiling architecture bdf_type of unidadFuncional
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/binary_to_bcd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/binary_to_bcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity binary_to_bcd
+# -- Compiling architecture logic of binary_to_bcd
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/Altera.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/Altera.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Altera
+# -- Compiling architecture bdf_type of Altera
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/LogicCircuit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity logic_circuit
+# -- Compiling architecture bdf_type of logic_circuit
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity shifter
+# -- Compiling architecture bdf_type of shifter
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity arithmetic_circuit
+# -- Compiling architecture function_table of arithmetic_circuit
+# ** Warning: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd(19): (vcom-1013) Initial value of "input" depends on value of signal "C_in".
+# ** Warning: /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/UA.vhd(19): (vcom-1013) Initial value of "input" depends on value of signal "S".
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/pract4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pract4
+# -- Compiling architecture bdf_type of pract4
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:54:23 on Oct 25,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica04/mux_2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer_2_to_1
+# -- Compiling architecture function_table of multiplexer_2_to_1
+# End time: 08:54:23 on Oct 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>

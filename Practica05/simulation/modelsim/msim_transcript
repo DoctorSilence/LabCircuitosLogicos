@@ -1,0 +1,73 @@
+# do Practica2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /opt/altera/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/Practica2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:14:39 on Sep 07,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/Practica2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Practica2
+# -- Compiling architecture bdf_type of Practica2
+# End time: 09:14:40 on Sep 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/Altera.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:14:40 on Sep 07,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/Altera.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Altera
+# -- Compiling architecture bdf_type of Altera
+# End time: 09:14:40 on Sep 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/decoder_2_4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:14:40 on Sep 07,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/decoder_2_4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity decoder_2_to_4
+# -- Compiling architecture function_table of decoder_2_to_4
+# End time: 09:14:40 on Sep 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/cont2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:14:40 on Sep 07,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/cont2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity cont2
+# -- Compiling architecture Behavioral of cont2
+# End time: 09:14:40 on Sep 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/mux_4_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:14:40 on Sep 07,2017
+# vcom -reportprogress 300 -93 -work work /home/local/ITAM/mmontesv/CircuitosLogicos/Practica02/mux_4_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplexer_4_to_1
+# -- Compiling architecture function_table of multiplexer_4_to_1
+# End time: 09:14:40 on Sep 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
